@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/static/raleway/Raleway-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/static/raleway/Raleway-Regular.ttf');
+    font-weight: 400;
+}
+
