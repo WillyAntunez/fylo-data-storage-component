@@ -24,6 +24,10 @@ body, html{
     margin: 0;
 }
 
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--VeryDark-Blue);
     background-image: url('../images/bg-desktop.png');
@@ -39,5 +43,39 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Panel */
+.panel{
+    width: 350px;
+    height: 200px;
+    margin-right: 30px;
+    padding: 40px;
+    border-radius: 10px 90px 10px 10px;
+    background-color: var(--Dark-blue);
+}
+
+.panel .logo{
+    display: block;
+    margin-bottom: 33px;
+}
+
+.panel .tools{
+    display: flex;
+}
+
+.panel .tools .tool{
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--VeryDark-Blue);
+
+    cursor: pointer;
 }
 
