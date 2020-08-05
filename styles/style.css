@@ -15,6 +15,8 @@
     --grayish-blue: hsl(229, 7%, 55%);
     --Dark-blue: hsl(228, 56%, 26%);
     --VeryDark-Blue: hsl(229, 57%, 11%);
+    --white: #ffffff;
+    --black: #000000;
 }
 
 body, html{
@@ -45,7 +47,7 @@ body{
     align-items: center;
 }
 
-/* Panel */
+/* panel */
 .panel{
     width: 350px;
     height: 200px;
@@ -79,3 +81,114 @@ body{
     cursor: pointer;
 }
 
+
+/* storage */
+.storage{
+    width: 540px;
+    height: 154px;
+    padding: 42px 40px;
+    border-radius: 10px;
+
+    position: relative;
+
+    background-color: var(--Dark-blue);
+}
+
+.storage p{
+    color: var(--pale-blue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.storage p b{
+    font-weight: 700;
+}
+
+.storage-bar{
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 3px;
+    margin-bottom: 10px;
+
+    background-color: var(--VeryDark-Blue);
+}
+
+.storage-bar .used-storage{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+
+    position: relative;
+
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.storage-bar .used-storage::after{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+
+    content: '';
+
+    position: absolute;
+    right: 2px;
+    top: 2px;
+
+    background-color: var(--white);
+}
+
+.storage-indicators{
+    display: flex;
+    justify-content: space-between;
+}
+
+.storage .left-memory{
+    position: absolute;
+    bottom: 129px;
+    right: 40px;
+}
+
+.storage .left-memory .globe{
+    width: 179px;
+    height: 72px;
+    padding: 0 25px;
+    border-radius: 10px 10px 0px 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    background-color: white;
+}
+
+.storage .left-memory .globe::after{
+    width: 0;
+    height: 0;
+    border-top: 22px solid var(--white);
+    border-left: 22px solid transparent;
+
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+
+    content: '';    
+}
+
+.storage .left-memory .globe h2{
+    font-family: 'raleway', sans-serif;
+    font-size: 35px;
+}
+
+.storage .left-memory .globe p{
+    margin: 0;
+
+    font-weight: 700;
+    color: var(--grayish-blue);
+}
