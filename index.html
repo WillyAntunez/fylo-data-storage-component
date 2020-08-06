@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/style.css">
 
   <title>Frontend Mentor | Fylo data storage component</title>
@@ -19,38 +21,40 @@
 <body>
 
   <div class="container">
-    <div class="panel">
-      <a class="logo" href="" >
-        <img src="images/logo.svg" alt="Fylo logo">
-      </a>
+    <div class="fylo-storage">
+      <div class="panel">
+        <a class="logo" href="" >
+          <img src="images/logo.svg" alt="Fylo logo">
+        </a>
 
-      <div class="tools">
-        <div class="tool document-button ">
-          <img src="images/icon-document.svg" alt="document icon">
-        </div>
-        <div class="tool folder-button ">
-          <img src="images/icon-folder.svg" alt="folder icon">
-        </div>
-        <div class="tool upload-button ">
-          <img src="images/icon-upload.svg" alt="upload icon">
+        <div class="tools">
+          <div class="tool document-button ">
+            <img src="images/icon-document.svg" alt="document icon">
+          </div>
+          <div class="tool folder-button ">
+            <img src="images/icon-folder.svg" alt="folder icon">
+          </div>
+          <div class="tool upload-button ">
+            <img src="images/icon-upload.svg" alt="upload icon">
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="storage">
-      <p>You’ve used <b  id="gb-used">815 GB</b> of your storage</p>
-      <div class="storage-bar">
-        <div class="used-storage">
+      <div class="storage">
+        <p>You’ve used <b  id="gb-used">815 GB</b> of your storage</p>
+        <div class="storage-bar">
+          <div class="used-storage">
+          </div>
         </div>
-      </div>
-      <div class="storage-indicators">
-        <p><b>0 GB</b></p>
-        <p><b id="available storage">1000 GB</b></p>
-      </div>
-      <div class="left-memory">
-        <div class="globe">
-          <h2>185</h2>
-          <p>GB Left</p>
+        <div class="storage-indicators">
+          <p><b>0 GB</b></p>
+          <p><b id="available storage">1000 GB</b></p>
+        </div>
+        <div class="left-memory">
+          <div class="globe">
+            <h2>185</h2>
+            <p>GB Left</p>
+          </div>
         </div>
       </div>
     </div>

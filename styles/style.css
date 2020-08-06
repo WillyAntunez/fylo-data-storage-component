@@ -1,15 +1,3 @@
-@font-face{
-    font-family: 'Raleway';
-    src: url('../fonts/static/raleway/Raleway-Bold.ttf');
-    font-weight: 700;
-}
-
-@font-face{
-    font-family: 'Raleway';
-    src: url('../fonts/static/raleway/Raleway-Regular.ttf');
-    font-weight: 400;
-}
-
 :root{
     --pale-blue: hsl(243, 100%, 93%);
     --grayish-blue: hsl(229, 7%, 55%);
@@ -45,6 +33,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fylo-storage{
+    display: flex;
+    align-items: flex-end;
 }
 
 /* panel */
@@ -161,7 +154,6 @@ body{
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     position: relative;
 
@@ -183,7 +175,8 @@ body{
 
 .storage .left-memory .globe h2{
     font-family: 'raleway', sans-serif;
-    font-size: 35px;
+    font-size: 36px;
+    margin-right: 10px;
 }
 
 .storage .left-memory .globe p{
